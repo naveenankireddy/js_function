@@ -30,7 +30,7 @@ let convertToString = n => String(n);
 let convertToString = n => {
   return String(n);
 };
-
+ 
 // Function Invocation
 
 convertToString(21); // "21"
@@ -42,12 +42,54 @@ convertToString(21); // "21"
  * @param {number} n
  * @return {number}
  */
+//function declaration
+function add(n){
+  return n + 1;
+}
+
+
+//function expression
+let add = function(n){
+  return n + 1;
+}
+
+//arrow function
+let add = n => n+1;
+
+//arrow function with curly braces
+let add = n=> {
+  return n+1;
+}
+ 
+//function invocation
+add(22)
 
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
+//function declaration
+function sub(n){
+  return n - 1;
+}
+
+
+//function expression
+let sub = function(n){
+  return n - 1;
+}
+
+//arrow function
+let sub = n => n - 1;
+
+//arrow function with curly braces
+let sub = n=> {
+  return n - 1;
+}
+ 
+//function invocation
+sub(22)
 
 /**
  * Adds two numbers.
@@ -55,6 +97,24 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the sum
  */
+//function declaration 
+function add(x,y){
+  let sum = x+y;
+  return sum;
+}
+
+//function expression
+let add = function(x,y){
+  let sum = x+y;
+  return sum;
+} 
+
+//arrow function with curly braces
+let add = (x,y) =>{
+   return x + y;
+}
+//function invocation
+add(4,5);
 
 /**
  * Subtracts the second number from the first.
@@ -62,6 +122,23 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the difference
  */
+//function declaration 
+function sub(x,y){
+  return x - y;
+}
+
+//function expression 
+let sub = function(x,y){
+  return x - y;
+}
+
+//arrow function with curly braces
+let sub = (x,y) => {
+  return x - y;
+}
+
+//function invocation 
+sub(4,5);
 
 /**
  * Multiplies two numbers.
@@ -70,6 +147,26 @@ convertToString(21); // "21"
  * @return {number} the product
  */
 
+ //funtion declaration
+ function multiplication(x,y){
+   return x * y;
+ }
+ 
+
+ //function expression
+ let multiplication = function(x,y){
+   return x * y;
+ }
+ 
+ //arrow function with out curly braces
+let multiplication = (x,y) => {
+  return x * y;
+}
+
+
+//function invocation
+multiplication(5,6);
+
 /**
  * Divides the first number by the second.
  * @param {number} x
@@ -77,12 +174,49 @@ convertToString(21); // "21"
  * @return {number} the quotient
  */
 
+ //function declaration 
+ function division(x,y){
+   return x / y;
+ }
+
+ //function expression 
+  let division = function(x,y){
+    return x / y;
+  }
+
+  //arrow function with curly braces
+
+  let division = (x,y) => {
+    return x/y;
+  }
+
+  // function invocation 
+  division(9,3);
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
+//function declaration 
+function squared(x){
+  return x * x;
+}
 
+//function expression
+let squared = function(x){
+  return x * x;
+}
+
+//arrow function 
+let squared = x => x * x;
+
+// arrow function with curly braces
+let squared = x => {
+  return x * x;
+}
+
+// function invocation
+ squared(9);
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
